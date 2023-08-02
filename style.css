@@ -1,0 +1,197 @@
+/*--------------- basic styling --------------- */
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: "Roboto Mono" !important;
+      background: #0f0f0f !important;
+      color: #fff !important;
+}
+
+.whitespace {
+      width: 100%;
+      height: 100px;
+}
+
+@media(max-width: 768px) {
+      .whitespace {
+            display: none;
+      }
+}
+
+
+/*--------------- navigation --------------- */
+nav {
+      width: 100%;
+      background: #0f0f0f;
+      height: 80px;
+      position: fixed;
+      z-index: 1;
+}
+
+nav #brand {
+      float: left;
+      display: block;
+      margin-left: 82px;
+      line-height: 80px;
+      font-weight: bold;
+}
+
+nav #brand a {
+      color: #fff;
+      transition: all 0.3s ease-out;
+}
+
+nav #brand a:hover {
+      text-decoration: none;
+}
+
+nav #menu {
+      float: left;
+      right: 80px;
+      position: fixed;
+}
+
+nav #menu li {
+      padding-left: 40px;
+      display: inline-block;
+      cursor: pointer;
+      font-weight: 300;
+      line-height: 80px;
+      position: relative;
+      transition: all 0.3s ease-out;
+}
+
+nav #menu li span {
+      font-weight: 700;
+}
+
+nav #menu li a {
+      color: #fff;
+}
+
+nav #menu li a:hover {
+      text-decoration: underline;
+}
+
+
+/*--------------- hero section --------------- */
+.hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.hero h1 {
+      font-weight: lighter;
+      text-align: center;
+      letter-spacing: -2px;
+      line-height: 58px;
+}
+
+@media(max-width: 768px) {
+      .header h1 {
+            font-size: 26px;
+      }
+}
+
+
+/*--------------- general styling --------------- */
+
+.text-content {
+      margin-left: 0%;
+}
+
+.text-content p {
+      font-weight: 300;
+      line-height: 36px;
+      color: grey;
+}
+
+.text-content h6 {
+      text-align: left;
+}
+
+@media(max-width: 768px) {
+      .text-content {
+            padding-top: 50px;
+            width: 96%;
+            margin: 0 auto;
+      }
+}
+
+
+/*--------------- about me (index.html) --------------- */
+
+.about {
+      height: 500px;
+      margin-top: 120px;
+}
+
+.blob-image {
+      background: url("images/blob.jpg") no-repeat 50% 35%;
+      background-size: cover;
+}
+
+
+/*--------------- visualisation --------------- */
+
+.vis-about {
+    position: absolute;
+    max-width: 45%;
+    max-height: 45%;
+    top: 50%;
+    left: 50%;
+    overflow: visible;
+}
+
+img {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 40%;
+    margin-left: -50%;
+}
+
+.vis-exp a {
+      color: #fff;
+}
+
+.vis-exp a:hover {
+      color: #fff;
+      text-decoration: underline;
+}
+
+
+/*--------------- svg --------------- */
+
+#canvas {
+        width: 20%;
+        height: 20%;
+	border: 1px solid black;
+}
+
+svg {
+	border: 1px solid black;
+        display: block;
+        margin: 0 auto;
+      }
+
+.shape {
+	fill: gray;
+        transition: all 0.9s ease-in-out;
+      }
+
+
+/*--------------- credits --------------- */
+
+.credits a {
+      color: #fff;
+}
+
+.credits a:hover {
+      color: #fff;
+      text-decoration: underline;
+}
