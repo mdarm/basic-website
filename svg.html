@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="author" content="mdarm">
+
+      <title>SVG | My first website | mdarm</title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+</head>
+
+<body>
+      <div class="wrapper">
+
+            <!--------------- navbar --------------->
+            <nav>
+                  <span id="brand">
+                        <a href="index.html">mdarm</a>
+                  </span>
+
+                  <ul id="menu">
+                        <li><a href="index.html">about me<span>.</span></a></li>
+                        <li><a href="visualisation.html">visualisation<span>.</span></a></li>
+                        <li><a href="svg.html">svg show-off<span>.</span></a></li>
+                        <li><a href="credits.html">credits<span>.</span></a></li>
+                  </ul>
+            </nav>
+
+            <div class="whitespace"></div>
+
+            <!--------------- text section --------------->
+            <div class="container">
+                  <div class="text-content">
+                        <br><br>
+
+                        <div class="row">
+                              <div class="col-lg-8">
+
+                                    <h3 class="wow fadeInUp">svg show-off.</h3><br>
+				    <p>The animation shown below is a set of SVG shapes (a circle, a rectangle and a polygon) that move around within a canvas area, and can be frozen in place by clicking on them.</p>
+
+                              </div>
+                        </div>
+                  </div>
+            </div>
+	    
+	     <div class="whitespace"></div>
+
+	    <!--------------- svg --------------->
+   	    <svg id="canvas" width="400" height="400">
+      	    	<rect class="shape" id="rect1" x="50" y="50" width="50" height="50" rx="10" ry="10" />
+      	    	<circle class="shape" id="circle1" cx="200" cy="200" r="30" />
+      	    	<polygon class="shape" id="polygon1" points="300,100 350,150 325,200 275,200 250,150" />
+            </svg>
+	    <script src="animation.js"></script>
+	</div>
+</body>
+</html>
